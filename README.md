@@ -10,13 +10,11 @@ sequenceDiagram
     note right of Bjorn: Display ASCII Banner
 ```
 
-
 ```mermaid
 sequenceDiagram
-    participant Adventure
-    participant data
-    participant functions
-
+participant Adventure
+participant data
+participant functions
 
 note over data:create array of objects
 note over data:export trails & rivers to functions and Adventure modules
@@ -42,15 +40,14 @@ note over Adventure:log & invoke shortest river
 note over Adventure:log & invoke longest river
 
 note over functions:get cheap and pricey trails
-functions -->Adventure : import cheap and pricey trails 
+functions -->Adventure : import cheap and pricey trails
 note over Adventure:log & invoke cheap trail
-note over Adventure:log & invoke expensive  trail
+note over Adventure:log & invoke expensive trail
 
 note over functions:get cheapest and pricey rivers
-functions -->Adventure : import cheap and pricey rivers 
+functions -->Adventure : import cheap and pricey rivers
 note over Adventure:log & invoke cheap river tour
 note over Adventure:log & invoke pricey river tour
-
 
 note over Adventure:loop through trails
 note over Adventure:loop through rivers
